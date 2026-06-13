@@ -44,3 +44,46 @@ function passwordValidator(password) {
 passwordValidator('logIn');
 passwordValidator('MyPass123');
 passwordValidator('Pa$s$s');
+
+/*
+function passwordValidator(password) {
+    let isValid = true;
+
+    if (password.length < 6 || password.length > 10) {
+        console.log('Password must be between 6 and 10 characters');
+        isValid = false;
+    }
+
+    let digitCount = 0;
+
+    for (let char of password) {
+        let code = char.charCodeAt(0);
+
+        let isDigit = code >= 48 && code <= 57;
+        let isUpperCase = code >= 65 && code <= 90;
+        let isLowerCase = code >= 97 && code <= 122;
+
+        if (!isDigit && !isUpperCase && !isLowerCase) {
+            console.log('Password must consist only of letters and digits');
+            isValid = false;
+            break;
+        }
+
+        if (isDigit) {
+            digitCount++;
+        }
+    }
+
+    if (digitCount < 2) {
+        console.log('Password must have at least 2 digits');
+        isValid = false;
+    }
+
+    if (isValid) {
+        console.log('Password is valid');
+    }
+}
+passwordValidator('logIn');
+passwordValidator('MyPass123');
+passwordValidator('Pa$s$s');
+*/
