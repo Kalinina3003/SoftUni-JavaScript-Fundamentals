@@ -58,3 +58,36 @@ highJump(["250",
     "235",
     "234",
     "235"]);
+
+/*
+function highJump(arr) {
+    let countTraining = 0;
+    let fail = 0;
+
+    let desiredHeight = Number(arr[0]);
+    let actualHeight = desiredHeight - 30;
+
+    for (let i = 1; i < arr.length; i++) {
+        let height = Number(arr[i]);
+
+        countTraining++;
+
+        if (height > actualHeight) {
+            if (actualHeight === desiredHeight) {
+                console.log(`Tihomir succeeded, he jumped over ${desiredHeight}cm after ${countTraining} jumps.`);
+                return;
+            }
+
+            actualHeight += 5;
+            fail = 0;
+        } else {
+            fail++;
+
+            if (fail === 3) {
+                console.log(`Tihomir failed at ${actualHeight}cm after ${countTraining} jumps.`);
+                return;
+            }
+        }
+    }
+}
+*/
