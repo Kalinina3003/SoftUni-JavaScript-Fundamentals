@@ -64,3 +64,45 @@ favoriteMovie(["Wrong turn",
     "Ice age",
     "Harry Potter",
     "Wizards"]);
+
+/*
+function favoriteMovie(arr) {
+    let index = 0;
+
+    let maxPoints = Number.MIN_SAFE_INTEGER;
+    let bestMovie = '';
+    let count = 0;
+
+    while (arr[index] !== 'STOP') {
+        let movie = arr[index++];
+
+        let sum = 0;
+
+        for (let i = 0; i < movie.length; i++) {
+            let symbol = movie[i];
+
+            if (symbol >= 'A' && symbol <= 'Z') {
+                sum += symbol.charCodeAt(0) - movie.length;
+            } else  if (symbol >= 'a' && symbol <= 'z') {
+                sum += symbol.charCodeAt(0) - (movie.length * 2);
+            } else {
+                sum += symbol.charCodeAt(0);
+            }
+        }
+
+        if (maxPoints < sum) {
+            maxPoints = sum;
+            bestMovie = movie;
+        }
+
+        count++;
+
+        if (count === 7) {
+            console.log('The limit is reached.');
+            break;
+        }
+    }
+
+    console.log(`The best movie for you is ${bestMovie} with ${maxPoints} ASCII sum.`);
+}
+*/
