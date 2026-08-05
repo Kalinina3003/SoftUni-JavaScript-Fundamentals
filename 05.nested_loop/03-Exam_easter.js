@@ -38,7 +38,8 @@ function easterCompetition(input) {
     console.log(`${winner} won competition with ${maxPoints} points!`);
 }
 easterCompetition(["3",
-    "Chef Manchev", "10",
+    "Chef Manchev", 
+    "10",
     "10",
     "10",
     "10",
@@ -66,3 +67,41 @@ easterCompetition(["2",
     "10",
     "10",
     "Stop"]);
+
+/*
+function easterCompetition(arr) {
+    let index = 0;
+
+    let count = 0;
+    let totalPoints = 0;
+    let winnersName = '';
+    let maxPoints = Number.MIN_SAFE_INTEGER;
+    let numOfKozunaks = Number(arr[index++]);
+
+    while (count < numOfKozunaks) {
+        let bakersName = arr[index++];
+
+        count++;
+        totalPoints = 0;
+
+        while (arr[index] !== 'Stop') {
+            let points = Number(arr[index++]);
+
+            totalPoints += points;
+        }
+
+        console.log(`${bakersName} has ${totalPoints} points.`);
+
+        if (maxPoints < totalPoints) {
+            maxPoints = totalPoints;
+            winnersName = bakersName;
+            
+            console.log(`${bakersName} is the new number 1!`);
+        }
+
+        index++;
+    }
+
+    console.log(`${winnersName} won competition with ${maxPoints} points!`);
+}
+*/
