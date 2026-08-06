@@ -94,3 +94,52 @@ tournamentOfChristmas(["3",
     "basketball",
     "win",
     "Finish"]);
+
+/*
+function tournamentOfChristmas(arr) {
+    let index = 0;
+    let totalMoney = 0;
+
+    let winDay = 0;
+    let loseDay = 0;
+
+    let days = Number(arr[index++]);
+    let count = 0;
+
+    while (count < days) {
+        count++;
+
+        let win = 0;
+        let lose = 0;
+        let moneyPerDay = 0;
+
+        while (arr[index] !== 'Finish') {
+            let sport = arr[index++];
+            let result = arr[index++];
+
+            if (result === 'win') {
+                moneyPerDay += 20;
+                win++;
+            } else {
+                lose++;
+            }
+        }
+
+        if (win > lose) {
+            moneyPerDay *= 1.10;
+            winDay++;
+        } else {
+            loseDay++;
+        }
+
+        totalMoney += moneyPerDay;
+        index++;
+    }
+
+    if (winDay > loseDay) {
+        console.log(`You won the tournament! Total raised money: ${(totalMoney * 1.20).toFixed(2)}`);
+    } else {
+        console.log(`You lost the tournament! Total raised money: ${totalMoney.toFixed(2)}`);
+    }
+}
+*/
