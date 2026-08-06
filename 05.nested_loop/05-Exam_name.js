@@ -58,3 +58,38 @@ nameGame(["Pesho",
     "76",
     "18",
     "Stop"]);
+
+/*
+function nameGame(arr) {
+    let index = 0;
+
+    let winner = '';
+    let maxPoints = 0;
+
+    while (arr[index] !== 'Stop') {
+        let name = arr[index++];
+        let sumPoints = 0;
+
+        for (let i = 0; i < name.length; i++) {
+            let letter = name[i];
+
+            let numbers = arr[index++];
+
+            let asciiNumbers = String.fromCharCode(numbers);
+
+            if (letter === asciiNumbers) {
+                sumPoints += 10;
+            } else {
+                sumPoints += 2;
+            }
+        }
+
+        if (maxPoints <= sumPoints) {
+            maxPoints = sumPoints;
+            winner = name;
+        } 
+    }
+
+    console.log(`The winner is ${winner} with ${maxPoints} points!`);
+}
+*/
