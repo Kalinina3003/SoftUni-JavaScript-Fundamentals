@@ -40,3 +40,45 @@ function barcodeGenerator(start, end) {
 }
 barcodeGenerator(2345, 6789);
 barcodeGenerator(3256, 6579);
+
+/*
+function barcodeGenerator(start, end) {
+    let result = '';
+
+    let startStr = String(start);
+    let endStr = String(end);
+
+    let numStart1 = Number(startStr[0]);
+    let numEnd1 = Number(endStr[0]);
+
+    let numStart2 = Number(startStr[1]);
+    let numEnd2 = Number(endStr[1]);
+
+    let numStart3 = Number(startStr[2]);
+    let numEnd3 = Number(endStr[2]);
+
+    let numStart4 = Number(startStr[3]);
+    let numEnd4 = Number(endStr[3]);
+
+    for (let i = numStart1; i <= numEnd1; i++) {
+        for (let j = numStart2; j <= numEnd2; j++) {
+            for (let x = numStart3; x <= numEnd3; x++) {
+                for (let y = numStart4; y <= numEnd4; y++) {
+
+                    if (i % 2 === 0 ||
+                        j % 2 === 0 ||
+                        x % 2 === 0 ||
+                        y % 2 === 0
+                    ) {
+                        continue;
+                    }
+
+                    result += `${i}${j}${x}${y} `;
+                }
+            }
+        }
+    }
+
+    console.log(result.trim());
+}
+*/
