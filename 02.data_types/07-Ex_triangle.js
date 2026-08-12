@@ -16,3 +16,22 @@ function triangleOfNumbers(n) {
 triangleOfNumbers(3);
 triangleOfNumbers(5);
 triangleOfNumbers(6);
+
+/*
+function triangleOfNumbers(n) {
+    let row = 1;
+
+    while (row <= n) {
+        currentRow = '';
+        count = 1;
+
+        while (count <= row) {
+            currentRow += `${row} `;
+            count++;
+        }
+
+        console.log(currentRow.trim());
+        row++;
+    }
+}
+*/
