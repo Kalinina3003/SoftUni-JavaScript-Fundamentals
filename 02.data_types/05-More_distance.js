@@ -12,3 +12,14 @@ function distanceBetweenPoints(x1, y1, x2, y2) {
 }
 console.log(distanceBetweenPoints(2, 4, 5, 0));
 console.log(distanceBetweenPoints(2.34, 15.66, -13.55, -2.9985));
+
+/*
+function solve(x1, y1, x2, y2) {
+    let xDistance = x2 - x1;
+    let yDistance = y2 - y1;
+
+    let distance = Math.hypot(xDistance, yDistance);
+
+    return distance;
+}
+*/
