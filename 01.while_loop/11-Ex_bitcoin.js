@@ -45,3 +45,45 @@ function bitcoinMining(input) {
     console.log(`Left money: ${totalMoney.toFixed(2)} lv.`);
 }
 bitcoinMining([100, 200, 300]);
+bitcoinMining([50, 100]);
+bitcoinMining([3124.15, 504.212, 2511.124]);
+
+/*
+function bitcoinMining(arr) {
+    let bitcoinPrice = 11949.16;
+    let costOfGold = 67.51;
+
+    let day = 0;
+    let bitcoinCount = 0;
+
+    let firstDay = 0;
+    let money = 0;
+
+    for (let gramsOfGold of arr) {
+        day++;
+
+        if (day % 3 === 0) {
+            gramsOfGold *= 0.70;
+        }
+
+        money += gramsOfGold * costOfGold;
+
+        while (money >= bitcoinPrice) {
+            money -= bitcoinPrice;
+            bitcoinCount++;
+
+            if (bitcoinCount === 1) {
+                firstDay = day;
+            }
+        }
+    }
+
+    console.log(`Bought bitcoins: ${bitcoinCount}`);
+
+    if (bitcoinCount > 0) {
+        console.log(`Day of the first purchased bitcoin: ${firstDay}`);
+    }
+
+    console.log(`Left money: ${money.toFixed(2)} lv.`);
+}
+*/
