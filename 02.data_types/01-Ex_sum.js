@@ -14,3 +14,17 @@ function sumDigits(num) {
 sumDigits(245678);
 sumDigits(97561);
 sumDigits(543);
+
+/*
+function sumDigits(number) {
+    let sum = 0;
+    let digit = number;
+
+    while (digit > 0) {
+        sum += digit % 10;
+        digit = parseInt(digit / 10);
+    }
+
+    console.log(sum);
+}
+*/
