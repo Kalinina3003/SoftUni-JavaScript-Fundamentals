@@ -19,3 +19,26 @@ function triplesOfLatinLetters(n) {
 }
 triplesOfLatinLetters('3');
 triplesOfLatinLetters('2');
+
+/*
+function triplesOfLatinLetters(n) {
+    n = Number(n);
+
+    let start = 97;
+    let end = 97 + n;
+
+    for (let i = start; i < end; i++) {
+        let letter1 = String.fromCharCode(i);
+
+        for (let j = start; j < end; j++) {
+            let letter2 = String.fromCharCode(j);
+
+            for (let k = start; k < end; k++) {
+                let letter3 = String.fromCharCode(k);
+
+                console.log(`${letter1}${letter2}${letter3}`);
+            }
+        }
+    }
+}
+*/
