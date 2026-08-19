@@ -12,3 +12,15 @@ function integerAndFloat(firstNum, secondNum, thirdNum) {
 }
 integerAndFloat(9, 100, 1.1);
 integerAndFloat(100, 200, 303);
+
+/*
+function solve(num1, num2, num3) {
+    let sum = num1 + num2 + num3;
+
+    let isInteger = Number.isInteger(sum);
+
+    let output = isInteger ? sum + ' - Integer' : sum + ' - Float';
+    
+    console.log(output);
+}
+*/
