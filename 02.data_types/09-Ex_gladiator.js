@@ -30,3 +30,36 @@ function gladiatorExpenes(lostFights, helmetPrice, swordPrice, shieldPrice, armo
 }
 gladiatorExpenes(7, 2, 3, 4, 5);
 gladiatorExpenes(23, 12.50, 21.50, 40, 200);
+
+/*
+function gladiatorExpenses(lostFightsCount, helmetPrice, swordPrice, shieldPrice, armorPrice) {
+    let totalAureus = 0;
+    let times = 0;
+    let brokenShield = 0;
+
+    while (lostFightsCount > 0) {
+        times++;
+
+        if (times % 2 === 0) {
+            totalAureus += helmetPrice;
+        }
+
+        if (times % 3 === 0) {
+            totalAureus += swordPrice;
+        }
+
+        if (times % 2 === 0 && times % 3 === 0) {
+            totalAureus += shieldPrice;
+            brokenShield++;
+
+            if (brokenShield % 2 === 0) {
+                totalAureus += armorPrice;
+            }
+        }
+
+        lostFightsCount--;
+    }
+
+    console.log(`Gladiator expenses: ${totalAureus.toFixed(2)} aureus`);
+}
+*/
