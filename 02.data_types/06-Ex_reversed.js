@@ -14,3 +14,24 @@ function reversedString(str) {
 reversedString('Information');
 reversedString('star');
 reversedString('racecar');
+
+/*
+function reversedString(str) {
+    let result = '';
+
+    for (let i = 0; i < str.length; i++) {
+        let letter = str[i];
+        
+        result = letter + result;
+    }
+
+    console.log(result);
+}
+*/
+
+/*
+function reversedString(str) {
+    let reversedStr = str.split('').reverse().join('');
+    console.log(reversedStr);
+}
+*/
