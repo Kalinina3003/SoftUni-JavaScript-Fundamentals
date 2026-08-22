@@ -8,3 +8,17 @@ function binaryToDecimal(binary) {
 }
 binaryToDecimal('00001001');
 binaryToDecimal('11110000');
+
+/*
+function binaryToDecimal(strNum) {
+    let result = 0;
+
+    for (let i = 0; i < strNum.length; i++) {
+        let num = Number(strNum[i]);
+
+        result += num * 2 ** (strNum.length - 1 - i);
+    }
+
+    console.log(result);
+}
+*/
