@@ -10,3 +10,9 @@ function lowerOrUpper(letter) {
 }
 lowerOrUpper('L');
 lowerOrUpper('f');
+
+/*
+function solve(letter) {
+    console.log(letter === letter.toLowerCase() ? 'lower-case' : 'upper-case');
+}
+*/
