@@ -47,3 +47,22 @@ function equalArrays(arr1, arr2) {
     console.log(`Arrays are identical. Sum: ${sum}`);
 }
 */
+
+/*
+function equalArrays(firstArr, secondArr) {
+    let sum = 0;
+    
+    for (let k = 0; k < firstArr.length; k++) { 
+        let num = Number(firstArr[k]);
+
+        if (Number(firstArr[k]) === Number(secondArr[k])) {
+            sum += num; 
+        } else {
+            console.log(`Arrays are not identical. Found difference at ${k} index`);
+            return;
+        }
+    }
+
+    console.log(`Arrays are identical. Sum: ${sum}`);
+}
+*/
