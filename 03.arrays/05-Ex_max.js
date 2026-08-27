@@ -24,3 +24,22 @@ function maxNumber(arr) {
 maxNumber([1, 4, 3, 2]);
 maxNumber([14, 24, 3, 19, 15, 17]);
 maxNumber([41, 41, 34, 20]);
+
+/*
+function maxNumber(arr) {
+    let result = '';
+
+    for (let i = 0; i < arr.length; i++) {
+        let num = arr[i];
+        let right = arr.slice(i + 1);
+
+        let maxRight = Math.max(...right);
+
+        if (num > maxRight) {
+            result += `${num} `;
+        }
+    }
+
+    console.log(result);
+}
+*/
