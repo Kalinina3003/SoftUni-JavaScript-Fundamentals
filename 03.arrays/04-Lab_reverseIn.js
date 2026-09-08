@@ -26,3 +26,17 @@ function reverseInPlace(arr) {
     console.log(arr.join(' '));
 }
 */
+
+/*
+function solve(arr) {
+    let result = '';
+
+    for (let i = 0; i < arr.length; i++) {
+        let symb = arr[i];
+
+        result = `${symb} ${result}`;
+    }
+
+    console.log(result);
+}
+*/
