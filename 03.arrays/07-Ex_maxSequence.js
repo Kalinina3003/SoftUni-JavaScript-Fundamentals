@@ -24,3 +24,26 @@ function maxSequenceOfEqual(arr) {
 maxSequenceOfEqual([2, 1, 1, 2, 3, 3, 2, 2, 2, 1]);
 maxSequenceOfEqual([1, 1, 1, 2, 3, 1, 3, 3]);
 maxSequenceOfEqual([0, 1, 1, 5, 2, 2, 6, 3, 3]);
+
+/*
+function maxSequence(arr) {
+    let line = [];
+    let longest = [];
+
+    for (let i = 0; i < arr.length; i++) {
+        let currentNum = arr[i];
+        let nextNum = arr[i + 1];
+
+        line.push(currentNum);
+        
+        if (currentNum !== nextNum) {
+            if (line.length > longest.length) {
+                longest = line;
+            }
+
+            line = [];
+        }
+    }
+
+    console.log(longest.join(' '));
+*/
