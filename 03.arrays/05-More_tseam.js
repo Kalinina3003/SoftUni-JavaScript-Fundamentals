@@ -54,3 +54,45 @@ tseamAccount(['CS WoW Diablo',
     'Update WoW',
     'Expansion Civ-V',
     'Play!']);
+
+/*
+function tseamAccount(arr) {
+    let gamesInAccount = arr[0].split(' ');
+    let index = 1;
+
+    while (arr[index] !== 'Play!') {
+        let command = arr[index++].split(' ');  
+        let action = command[0];
+        let game = command[1];
+
+        if (action === 'Install') {
+            if (!(gamesInAccount.includes(game))) {
+                gamesInAccount.push(game);
+            }
+        } else if (action === 'Uninstall') {  
+            if (gamesInAccount.includes(game)) {
+                let index = gamesInAccount.indexOf(game); 
+
+                gamesInAccount.splice(index, 1); 
+            }
+        } else if (action === 'Update') {
+            if (gamesInAccount.includes(game)) {
+                let index = gamesInAccount.indexOf(game);
+
+                gamesInAccount.splice(index, 1);  
+                gamesInAccount.push(game);        
+            }
+        } else if (action === 'Expansion') {
+            let [gameName, expansion] = game.split('-'); 
+
+            if (gamesInAccount.includes(gameName)) {
+                let index = gamesInAccount.indexOf(gameName);
+
+                gamesInAccount.splice(index + 1, 0, gameName + ':' + expansion);
+            } 
+        } 
+    }
+
+    console.log(gamesInAccount.join(' '));
+}
+*/
