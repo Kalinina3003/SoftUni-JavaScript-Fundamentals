@@ -12,7 +12,10 @@ function commonElements(arr1, arr2) {
     }
 }
 commonElements(['Hey', 'hello', 2, 4, 'Peter', 'e'], ['Petar', 10, 'hey', 4, 'hello', '2']);
+// hello 4; (\n)
+
 commonElements(['S', 'o', 'f', 't', 'U', 'n', 'i', ' '], ['s', 'o', 'c', 'i', 'a', 'l']);
+// o i; (\n)
 
 /*
 function commonElements(firstArr, secondArr) {
@@ -26,5 +29,15 @@ function commonElements(firstArr, secondArr) {
             }
         }
     }
+}
+*/
+
+/*
+function solve(arr1, arr2) {
+    arr1.forEach(data => {
+        if (arr2.includes(data)) {
+            console.log(data);
+        }
+    });
 }
 */
