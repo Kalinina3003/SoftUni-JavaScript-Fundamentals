@@ -43,3 +43,23 @@ function maxNumber(arr) {
     console.log(result);
 }
 */
+
+/*
+function solve(arr) {
+    let result = [arr[arr.length - 1]];
+    let maxNum = arr[arr.length - 1];
+    
+    for (let i = arr.length - 2; i >= 0; i--) {
+        let curNum = arr[i];
+
+        if (curNum > maxNum) {
+            maxNum = curNum;
+            result.push(curNum);
+        }
+    }
+
+    result.reverse();
+
+    console.log(result.join(' '));
+}
+*/
