@@ -11,4 +11,14 @@ function repeatString(str, count) {
     return result;
 }
 console.log(repeatString("abc", 3));
+// abcabcabc;
+
 console.log(repeatString("String", 2));
+// StringString;
+
+/*
+function repeatString(data, n) {
+    let result = data.repeat(n);
+    return result;
+}
+*/
