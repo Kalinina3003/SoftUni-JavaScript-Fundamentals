@@ -13,5 +13,31 @@ function addAndSubtract(num1, num2, num3) {
 }
 
 addAndSubtract(23, 6, 10);
+// 19;
 addAndSubtract(1, 17, 30);
+// -12;
+
 addAndSubtract(42, 58, 100);
+// 0;
+
+/*
+function sum(num1, num2) {
+    return num1 + num2;
+}
+
+function subtract(num1, num2, num3) {
+    let sumResult = sum(num1, num2);
+    return sumResult - num3;
+}
+*/
+
+/*
+function subtract(num1, num2, num3) {
+    function sum(a, b) {
+        return a + b;
+    }
+    
+    let sumResult = sum(num1, num2);
+    return sumResult - num3;
+}
+*/
