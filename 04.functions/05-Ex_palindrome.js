@@ -37,3 +37,28 @@ function palindromeIntegers(arr) {
     }
 }
 */
+
+/*
+function palindromeIntegers(arr) {
+    for (let num of arr) {
+        let strNum = String(num);
+
+        let left = 0;
+        let right = strNum.length - 1;
+
+        while (left < right) {
+            if (strNum[left] !== strNum[right]) {
+                console.log(false);
+                break;
+            }
+
+            left++;
+            right--;
+        }
+
+        if (strNum[left] === strNum[right]) {
+            console.log(true);
+        }
+    }
+}
+*/
