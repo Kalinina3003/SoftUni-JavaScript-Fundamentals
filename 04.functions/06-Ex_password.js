@@ -42,8 +42,15 @@ function passwordValidator(password) {
     }
 }
 passwordValidator('logIn');
+// Password must be between 6 and 10 characters;
+// Password must have at least 2 digits;
+
 passwordValidator('MyPass123');
+// Password is valid;
+
 passwordValidator('Pa$s$s');
+// Password must consist only of letters and digits;
+// Password must have at least 2 digits;
 
 /*
 function passwordValidator(password) {
@@ -86,4 +93,56 @@ function passwordValidator(password) {
 passwordValidator('logIn');
 passwordValidator('MyPass123');
 passwordValidator('Pa$s$s');
+*/
+
+/*
+function passwordValidator(password) {
+
+    function checkCharLength(password) {
+        if (password.length >= 6 && password.length <= 10) {
+            return true;
+        } else {
+            console.log('Password must be between 6 and 10 characters');
+            return false;
+        }
+    }
+
+    function checkLettersAndDigits(password) {
+        for (let char of password) {
+            if (!((char >= 'A' && char <= 'Z') ||
+                (char >= 'a' && char <= 'z') ||
+                (char >= '0' && char <= '9'))) {
+                console.log('Password must consist only of letters and digits');
+                return false;
+            } 
+        }
+
+        return true;
+    }
+
+    function checkMinimumDigits(password) {
+        let digitCount = 0;
+
+        for (let digit of password) {
+            if (digit >= '0' && digit <= '9') {
+                digitCount++;
+            }
+        }
+
+        if (digitCount < 2) {
+            console.log('Password must have at least 2 digits');
+            return false;
+        } else {
+            return true;
+        }
+    }
+
+    let isValidLength = checkCharLength(password);
+    let isValidSymbols = checkLettersAndDigits(password);
+    let isValidCountNums = checkMinimumDigits(password);
+
+    if (isValidLength && isValidSymbols && isValidCountNums) {
+        console.log('Password is valid');
+    }
+}
 */
