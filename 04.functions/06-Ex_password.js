@@ -52,6 +52,8 @@ passwordValidator('Pa$s$s');
 // Password must consist only of letters and digits;
 // Password must have at least 2 digits;
 
+
+// Var 2;
 /*
 function passwordValidator(password) {
     let isValid = true;
@@ -90,11 +92,9 @@ function passwordValidator(password) {
         console.log('Password is valid');
     }
 }
-passwordValidator('logIn');
-passwordValidator('MyPass123');
-passwordValidator('Pa$s$s');
 */
 
+// Var. 3;
 /*
 function passwordValidator(password) {
 
