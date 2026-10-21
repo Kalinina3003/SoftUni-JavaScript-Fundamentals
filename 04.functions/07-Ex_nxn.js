@@ -13,5 +13,27 @@ function nxnMatrix(num) {
     }
 }
 nxnMatrix(3);
+// 3 3 3
+// 3 3 3
+// 3 3 3
+
 nxnMatrix(7);
 nxnMatrix(2);
+
+/*
+function nXnMatrix(n) {
+    let matrix = [];
+
+    for (let row = 0; row < n; row++) {
+        matrix.push([]);
+
+        for (let col = 0; col < n; col++) {
+            matrix[row][col] = n;
+        }
+    }
+
+    for (let row of matrix) {
+        console.log(row.join(' '));
+    }
+}
+*/
