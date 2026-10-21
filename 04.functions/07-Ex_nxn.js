@@ -37,3 +37,28 @@ function nXnMatrix(n) {
     }
 }
 */
+
+/*
+function nXnMatrix(n) {
+
+    function createMatrix(n) {
+        let matrix = [];
+
+        for (let row = 0; row < n; row++) {
+            matrix.push([]);
+
+            for (let col = 0; col < n; col++) {
+                matrix[row][col] = n;
+            }
+        }
+
+        return matrix;
+    }
+
+    let output = createMatrix(n);
+    
+    for (let row of output) {
+        console.log(row.join(' '));
+    }
+}
+*/
