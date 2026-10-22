@@ -18,4 +18,26 @@ function factorialDivision(num1, num2) {
     console.log(result.toFixed(2));
 }
 factorialDivision(5, 2);
+// 60.00;
+
 factorialDivision(6, 2);
+// 360.00;
+
+/*
+function factorialDivision(firstNum, secondNum) {
+
+    function factorial(num) {
+        let result = 1;
+
+        for (let i = 1; i <= num; i++) {
+            result *= i;
+        }
+
+        return result;
+    }
+
+    let result = factorial(firstNum) / factorial(secondNum);
+
+    console.log(result.toFixed(2));
+}
+*/
