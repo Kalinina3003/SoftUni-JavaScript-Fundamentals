@@ -23,5 +23,40 @@ function loadingBar(num) {
     }
 }
 loadingBar(30);
+// 30% [%%%.......]
+// Still loading...
+
 loadingBar(50);
+// 50% [%%%%%.....]
+// Still loading...
+
 loadingBar(100);
+// 100% Complete!
+// [%%%%%%%%%%]
+
+/*
+function loadingBar(num) {
+
+    function createBar() {
+        let bar = '';
+
+        for (let i = 1; i <= 10; i++) {
+            if (i <= num / 10) {
+                bar += '%';
+            } else {
+                bar += '.';
+            }
+        }
+
+        return bar;
+    }
+
+    if (num === 100) {
+        console.log(`${num}% Complete!`);
+        console.log(`[${createBar()}]`);
+    } else {
+        console.log(`${num}% [${createBar()}]`);
+        console.log('Still loading...');
+    }
+}
+*/
