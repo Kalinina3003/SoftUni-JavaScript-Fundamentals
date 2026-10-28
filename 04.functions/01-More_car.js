@@ -22,4 +22,38 @@ function carwash(arr) {
     console.log(`The car is ${clean.toFixed(2)}% clean.`);
 }
 carwash(['soap', 'soap', 'vacuum cleaner', 'mud', 'soap', 'water']);
+// The car is 39.00% clean.;
+
 carwash(["soap", "water", "mud", "mud", "water", "mud", "vacuum cleaner"]);
+// The car is 13.12% clean.;
+
+/*
+function carWash(arr) {
+    let isCleaned = 0;
+
+    function cleanCalculation(cleanliness, command) {
+        switch (command) {
+            case 'soap':
+                cleanliness += 10;
+                break;
+            case 'water':
+                cleanliness *= 1.20;
+                break;
+            case 'vacuum cleaner':
+                cleanliness *= 1.25;
+                break;
+            case 'mud':
+                cleanliness *= 0.90;
+                break;
+        }
+
+        return cleanliness;
+    }
+
+    for (let command of arr) {
+        isCleaned = cleanCalculation(isCleaned, command);
+    }
+
+    console.log(`The car is ${isCleaned.toFixed(2)}% clean.`);
+}
+*/
