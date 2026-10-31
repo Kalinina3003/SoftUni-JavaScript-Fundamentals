@@ -25,4 +25,39 @@ function numberModification(number) {
     console.log(digits);
 }
 numberModification(101);
+// 1019999;
+
 numberModification(5835);
+// 5835;
+
+/*
+function numberModification(number) {
+
+    function calculateAverage(digits) {
+        let sum = 0;
+        let digitsStr = String(digits);
+
+        for (let num of digitsStr) {
+            sum += Number(num);
+        }
+
+        let average = sum / digitsStr.length;
+
+        return average;
+    }
+
+    let digits = String(number);
+
+    while (true) {
+        let newAverage = calculateAverage(digits);
+
+        if (newAverage > 5) {
+            break;
+        }
+
+        digits += '9';
+    }
+
+    console.log(digits);
+}
+*/
